@@ -16,6 +16,9 @@ import Prismic from 'prismic-javascript';
 import { getPrismicClient } from "@/services/prismic";
 
 // 345600
+export const metadata = {
+  title: 'Home'
+}
 
 export default function Home() {
   const [projetos, setProjetos] = useState<any[]>([])
