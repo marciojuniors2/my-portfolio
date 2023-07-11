@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import ProjetoItem from '@/components/ListProjects';
 import Header from '../../components/Header';
 import { ProjetosContainer } from '../../styles/ProjetosStyle';
