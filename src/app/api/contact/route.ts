@@ -46,7 +46,6 @@ export async function POST(request: Request) {
       message: 'Mensagem enviada com sucesso!',
     })
   } catch (error) {
-    console.log(error)
     return NextResponse.error()
   }
 }

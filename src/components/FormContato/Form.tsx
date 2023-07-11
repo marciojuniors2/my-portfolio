@@ -39,30 +39,25 @@ export const Form = () => {
 
   return (
     <FormContainer
-    className="mt-12 w-full flex flex-col gap-4"
     onSubmit={handleSubmit(onSubmit)}
     >
     <Input
       placeholder="Nome"
-      className="w-full h-14 bg-gray-800 rounded-lg placeholder:text-gray-400 text-gray-50 p-4 focus:outline-none focus:ring-2 ring-emerald-600"
       {...register('name')}
     />
     <Input
       placeholder="E-mail"
       type="email"
-      className="w-full h-14 bg-gray-800 rounded-lg placeholder:text-gray-400 text-gray-50 p-4 focus:outline-none focus:ring-2 ring-emerald-600"
       {...register('email')}
     />
     <TextArea
       placeholder="Mensagem"
-      className="resize-none w-full h-[138px] bg-gray-800 rounded-lg placeholder:text-gray-400 text-gray-50 p-4 focus:outline-none focus:ring-2 ring-emerald-600"
       {...register('message')}
       maxLength={500}
     />
 
       <button disabled={isSubmitting}>
         Enviar mensagem
-        <HiArrowNarrowRight size={18} />
       </button>
   </FormContainer>
 

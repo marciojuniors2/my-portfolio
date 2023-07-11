@@ -15,7 +15,7 @@ function Experiencias() {
           description=".Net, Asp-net, React.ts with tailwind.css, and RPA, Azure, Excel, Teams"
         />
         <ExperienciaItem
-          year="Dec 22 to 23 (Actual)"
+          year="Dec 22 to July 23 "
           empresa="NextCoders"
           title="Dev Full-Stack"
           description=".Net Core, React.ts with mui material, context and hooks,  

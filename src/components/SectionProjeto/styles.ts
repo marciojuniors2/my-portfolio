@@ -11,7 +11,6 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 5rem;
-  background: yellow;
 
   > section {
     width: 100%;

@@ -15,8 +15,6 @@ import 'aos/dist/aos.css'
 import Prismic from 'prismic-javascript';
 import { getPrismicClient } from "@/services/prismic";
 
-// 345600
-
 export default function Home() {
   const [projetos, setProjetos] = useState<any[]>([])
 
