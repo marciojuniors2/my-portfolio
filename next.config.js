@@ -9,6 +9,6 @@ module.exports = {
   },
   reactStrictMode: true,
   env: {
-    PRISMIC_API_ENDPOINT: process.env.PRISMIC_API_ENDPOINT,
+    PRISMIC_API_ENDPOINT: process.env.NEXT_PUBLIC_PRISMIC_API_ENDPOINT,
   }
 };
