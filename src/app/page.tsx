@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import React, { useEffect, useState } from 'react'
 import { HomeContainer } from "@/styles/HomeStyles";
 import HomeHero from "@/components/HomeHero";

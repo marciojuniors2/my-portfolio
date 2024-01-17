@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import { ThemeProvider } from 'styled-components';
 // import { Inter } from 'next/font/google'
 import theme from '@/styles/theme';
