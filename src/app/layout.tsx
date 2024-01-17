@@ -1,9 +1,8 @@
-'use client'
 import { ThemeProvider } from 'styled-components';
-// import { Inter } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import theme from '@/styles/theme';
 import GlobalStyles from '../styles/globals';
-// const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: {
