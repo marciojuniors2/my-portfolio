@@ -5,22 +5,32 @@ import { Container } from './styles';
 function Experiencias() {
   return (
     <Container>
-      <SectionTitle title="02 Years" description="of Experience Professional" />
+      <SectionTitle title="03 Years" description="of professional experience" />
 
       <section>
         <ExperienciaItem
-          year="May 2022 - Agust 22"
+          year="Feb 2022 - Set 22"
           empresa="Koode Ltda"
           title="Dev Full-Stack"
-          description=".Net, Asp-net, React.ts with tailwind.css, and RPA, Azure, Excel, Teams"
+          description=".Net Core, Asp-net, React.ts, tailwind.css, Styled Components and process of automation.
+          Clouds: Azure Devops, Excel, Teams"
         />
+
         <ExperienciaItem
-          year="Dec 22 to July 23 "
+          year="Set 2022 - Set 2023"
           empresa="NextCoders"
-          title="Dev Full-Stack"
-          description=".Net Core, React.ts with mui material, context and hooks,  
-           Cloud: Azure, Excel, Teams"
+          title="Full-Stack Developer"
+          description=".NET Core, React.js with Material-UI, utilizing React context for efficient state management and hooks for functional component logic,
+          Clouds: Azure Devops, Teams"
         />
+
+        <ExperienciaItem
+          year="Set 2023 - (current)"
+          empresa="Verzel"
+          title="Full-Cycle Developer"
+          description=" Backend: .NET Core, Python, Node.js. Front-End: React.ts, Mobile: React-Native and miscellaneous Sql "
+        />
+
       </section>
     </Container>
   );

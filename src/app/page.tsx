@@ -15,6 +15,19 @@ import 'aos/dist/aos.css'
 import Prismic from 'prismic-javascript';
 import { getPrismicClient } from "@/services/prismic";
 
+
+export const metadata = {
+  title: {
+    default: 'Home',
+    template: '%s | MarcioJunior'
+  },
+  icons: [
+    {
+      url: '/start.png'
+    }
+  ]
+}
+
 export default function Home() {
   const [projetos, setProjetos] = useState<any[]>([])
 
@@ -23,9 +36,9 @@ export default function Home() {
 
     const projectResponse = await prismic.query(
       [Prismic.Predicates.at('document.type', 'portfolio')],
-      { orderings: '[document.first_publication_date desc]'}
+      { orderings: '[document.first_publication_date desc]' }
     );
-    
+
     const projects = projectResponse.results.map(projeto => ({
       slug: projeto.uid,
       title: projeto.data.title,
@@ -33,12 +46,12 @@ export default function Home() {
       description: projeto.data.description,
       link: projeto.data.link.url,
       thumbnail: projeto.data.thumbnail.url
-     }));
-     
-     setProjetos(projects)
-  } 
+    }));
 
-    
+    setProjetos(projects)
+  }
+
+
   useEffect(() => {
     fetchData();
     Aos.init({ duration: 1500 });

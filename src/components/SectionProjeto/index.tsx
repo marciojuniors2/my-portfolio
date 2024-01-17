@@ -18,19 +18,19 @@ export interface ProjetosProps {
 export function Projetos({ projetos }: ProjetosProps) {
   return (
     <Container>
-      <SectionTitle title='Ultimos Projetos'/>
-       <section>
+      <SectionTitle title='Latest projects' />
+      <section>
         {projetos.slice(0, 3).map(projeto => (
           <ProjetoItem
-          key={projeto.slug}
-          img={projeto.thumbnail}
-          title={projeto.title}
-          type={projeto.type}
-          slug={projeto.slug}
-         />
+            key={projeto.slug}
+            img={projeto.thumbnail}
+            title={projeto.title}
+            type={projeto.type}
+            slug={projeto.slug}
+          />
         ))}
 
-       </section>
+      </section>
     </Container>
   );
 }

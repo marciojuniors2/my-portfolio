@@ -29,7 +29,7 @@ export const ItemContainer = styled.div`
     background: ${({ theme }) => theme.gradient};
     padding: 1rem;
     padding-top: 2.5rem;
-    height: 20rem;
+    height: 23rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
